@@ -26,8 +26,8 @@ export default {
 
 <style lang="scss">
 .work-card {
-  width: 270px;
-  height: 280px;
+  width: 290px;
+  height: 310px;
   border-radius: 10px;
   background-color: var(--bg-content-color);
   overflow: hidden;
