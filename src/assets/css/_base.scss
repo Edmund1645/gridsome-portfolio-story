@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout a:not(.button) {
+  color: var(--link-color);
+}
+a:not(.button) {
+  transition: opacity 0.2s;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.no-space-top {
+  margin-top: 0;
+}
+@media screen and (max-width: 625px) {
+  .work-cards {
+    display: block;
+
+    .work-card {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-cards {
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
