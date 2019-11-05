@@ -16,6 +16,18 @@
         <slot />
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          Built with 🍻 by
+          <a href="//edmundekott.me">Edmund Ekott</a>
+        </p>
+        <p>
+          Powered by
+          <a href="//gridsome.org">Gridsome</a>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -41,7 +53,7 @@ export default {
 <style lang='scss'>
 .wrapper {
   background-color: var(--bg-color);
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 100px;
 }
 .layout {
@@ -82,6 +94,22 @@ export default {
     }
   }
 }
+
+.footer {
+  background: var(--bg-footer);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    a {
+      color: currentColor;
+      text-decoration: underline;
+    }
+  }
+}
 @media screen and (max-width: 650px) {
   .header {
     height: 65px;
@@ -91,7 +119,7 @@ export default {
   .header {
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 1000;
   }
 }
 @media screen and (min-width: 1024px) {

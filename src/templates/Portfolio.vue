@@ -5,21 +5,21 @@
         <h3 class="no-space-top">{{$page.work.title}}</h3>
         <p>{{$page.work.description}}</p>
         <hr />
-        <p>
-          <strong class="work-details">Year</strong>
-          {{$page.work.date}}
+        <p class="work-details">
+          <strong>Year</strong>
+          <span>{{$page.work.date}}</span>
         </p>
-        <p>
-          <strong class="work-details">Client</strong>
-          {{$page.work.client}}
+        <p class="work-details">
+          <strong>Client</strong>
+          <span>{{$page.work.client}}</span>
         </p>
-        <p>
-          <strong class="work-details">Role</strong>
-          {{$page.work.client}}
+        <p class="work-details">
+          <strong>Role</strong>
+          <span>{{$page.work.client}}</span>
         </p>
-        <p>
-          <strong class="work-details">Link</strong>
-          {{$page.work.link}}
+        <p class="work-details">
+          <strong>Link</strong>
+          <a :href="`//${$page.work.link}`" class="work-link" target="_blank">{{$page.work.link}}</a>
         </p>
       </aside>
       <article class="content">
@@ -57,8 +57,19 @@ export default {
 </script>
 
 <style lang="scss">
-strong.work-details {
-  padding-right: auto;
+.sidebar {
+  .work-details {
+    display: table;
+    table-layout: fixed;
+    strong {
+      width: 150px;
+      display: table-cell;
+    }
+
+    & a.work-link {
+      color: #ffffff;
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
   .work-container {

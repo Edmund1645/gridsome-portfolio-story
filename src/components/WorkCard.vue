@@ -26,8 +26,8 @@ export default {
 
 <style lang="scss">
 .work-card {
-  width: 290px;
-  height: 310px;
+  width: 300px;
+  height: 320px;
   border-radius: 10px;
   background-color: var(--bg-content-color);
   overflow: hidden;
@@ -74,6 +74,11 @@ export default {
     text-indent: -9999px;
     z-index: 0;
     opacity: 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  .work-card {
+    width: 95%;
   }
 }
 </style>

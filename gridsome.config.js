@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Gridsome',
   templates: {
-    Portfolio: '/portfolio/:path',
+    Portfolio: '/portfolio/:title',
     Tag: '/tag/:id'
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Portfolio',
-        path: './content/posts/*.md',
+        path: 'content/works/*.md',
         refs: {
           tags: {
             typeName: 'Tag',

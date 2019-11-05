@@ -23,12 +23,17 @@ export default {
   z-index: 20;
 
   &-link {
-    margin-right: 1em;
+    margin-right: 2em;
     color: currentColor;
     background-color: var(--card-tag-bg);
     font-size: 0.7em;
     border-radius: 25em;
-    padding: 0.05em 0.5em;
+    padding: 0.15em 0.45em;
+  }
+}
+@media screen and (max-width: 625px) {
+  .work-tags {
+    font-size: 1.4rem;
   }
 }
 </style>

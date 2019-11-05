@@ -33,6 +33,11 @@ a:not(.button) {
     z-index: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .work-cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

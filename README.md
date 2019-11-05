@@ -1,5 +1,5 @@
 # Portfolio story starter for Gridsome
----
+
 
 > A starter template for Gridsome for designers and developers to tell stories about their work.
 
