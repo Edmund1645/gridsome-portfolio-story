@@ -1,12 +1,15 @@
 <template>
   <div class="work-card">
-    <div class="work-card-details-container" :style="{backgroundImage: `url(${work.cover_image})`}">
-      <div class="work-card-details">
-        <h2 class="work-card-title" v-html="work.title"></h2>
-        <small v-html="work.date"></small>
-
-        <WorkTags :work="work" v-if="work.tags" />
+    <!-- :style="{backgroundImage: `url(${work.cover_image})`}" -->
+    <div class="work-card-details-container">
+      <div class="work-card-header">
+        <g-image alt="Cover Image" class="work-image" :src="work.cover_image" />
       </div>
+      <div class="work-card-details">
+        <h4 class="work-card-title" v-html="work.title"></h4>
+        <small v-html="work.date"></small>
+      </div>
+      <WorkTags :work="work" v-if="work.tags" />
 
       <g-link class="work-card-link" :to="work.path">Link</g-link>
     </div>
@@ -46,11 +49,13 @@ export default {
       width: 100%;
       height: 100%;
       background: #0f0f0f98;
+      z-index: 2;
     }
   }
 
   &-details {
     position: absolute;
+    z-index: 3;
     width: 100%;
     height: 100%;
   }
@@ -72,13 +77,25 @@ export default {
     height: 100%;
     overflow: hidden;
     text-indent: -9999px;
-    z-index: 0;
+    z-index: 4;
     opacity: 0;
   }
 }
+.work-card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 170px;
+  overflow: hidden;
+}
+.work-image {
+  min-width: 100%;
+}
 @media screen and (max-width: 625px) {
   .work-card {
-    width: 95%;
+    width: 87%;
+    margin-top: 30px;
   }
 }
 </style>
