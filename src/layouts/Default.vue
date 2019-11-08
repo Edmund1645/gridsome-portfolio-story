@@ -20,11 +20,11 @@
       <div class="footer__content">
         <p>
           Built with 🍻 by
-          <a href="//edmundekott.me">Edmund Ekott</a>
+          <a target="_blank" href="//edmundekott.me">Edmund Ekott</a>
         </p>
         <p>
           Powered by
-          <a href="//gridsome.org">Gridsome</a>
+          <a target="_blank" href="//gridsome.org">Gridsome</a>
         </p>
       </div>
     </footer>
@@ -54,7 +54,7 @@ export default {
 .wrapper {
   background-color: var(--bg-color);
   min-height: 80vh;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 .layout {
   max-width: 960px;
@@ -64,7 +64,7 @@ export default {
   padding-bottom: 30px;
 }
 .header {
-  background: var(--bg-content-color);
+  background: var(--bg-header);
 }
 .navigation-bar {
   max-width: 960px;

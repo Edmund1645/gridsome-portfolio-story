@@ -29,11 +29,12 @@ export default {
 
 <style lang="scss">
 .work-card {
-  width: 300px;
-  height: 320px;
+  width: 270px;
+  height: 250px;
   border-radius: 10px;
-  background-color: var(--bg-content-color);
+  background-color: var(--work-card-bg);
   overflow: hidden;
+  margin: auto;
 
   &-details-container {
     padding: 1rem;
@@ -48,7 +49,7 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #0f0f0f98;
+      background: #17192098;
       z-index: 2;
     }
   }
@@ -86,7 +87,7 @@ export default {
   top: 0;
   left: 0;
   z-index: 0;
-  height: 170px;
+  height: 150px;
   overflow: hidden;
 }
 .work-image {
@@ -94,7 +95,8 @@ export default {
 }
 @media screen and (max-width: 625px) {
   .work-card {
-    width: 87%;
+    width: 90%;
+    height: 280px;
     margin-top: 30px;
   }
 }

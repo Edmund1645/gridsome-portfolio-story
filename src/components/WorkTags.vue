@@ -19,7 +19,7 @@ export default {
 .work-tags {
   margin: 1.5em 0 0;
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   z-index: 20;
 
   &-link {
