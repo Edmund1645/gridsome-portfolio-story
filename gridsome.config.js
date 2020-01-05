@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Gridsome',
   templates: {
-    Portfolio: '/portfolio/:title',
+    Portfolio: '/project/:title',
     Tag: '/tag/:id'
   },
   plugins: [
@@ -22,6 +22,19 @@ module.exports = {
             create: true
           }
         }
+      }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
+      }
+    },
+    {
+      use: 'gridsome-plugin-netlify-cms-paths',
+      options: {
+        contentTypes: ['Portfolio'],
+        coverField: 'cover_image'
       }
     }
   ],

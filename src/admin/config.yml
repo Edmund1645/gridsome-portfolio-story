@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+publish_mode: editorial_workflow
+
+collections:
+  - name: 'Portfolio'
+    label: 'Projects'
+    folder: 'content/works/'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Published', name: 'published', widget: 'boolean', default: true }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Specify a maximum of two tags', field: { name: tag, label: Tag, widget: string } }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -35,7 +35,7 @@ export default {
     WorkCard
   },
   metaInfo: {
-    title: 'Work'
+    title: 'My Works'
   }
 };
 </script>

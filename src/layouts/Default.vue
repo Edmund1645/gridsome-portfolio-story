@@ -8,6 +8,7 @@
         <nav v-if="showNav" class="nav">
           <g-link class="nav__link" to="/">Work</g-link>
           <g-link class="nav__link" to="/about/">About</g-link>
+          <g-link class="nav__link" to="/contact/">Contact</g-link>
         </nav>
       </div>
     </header>

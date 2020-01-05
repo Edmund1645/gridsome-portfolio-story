@@ -9,7 +9,10 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.10",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-netlify-cms-paths": "^0.3.0",
+    "netlify-cms": "^2.10.2"
   },
   "devDependencies": {
     "node-sass": "^4.13.0",

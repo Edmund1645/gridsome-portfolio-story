@@ -6,7 +6,7 @@ tags: [social, product design]
 client: Google
 role: Product designer
 link: google.com
-cover_image: ./images/luca-bravo-XJXWbfSo2f0-unsplash.jpg
+cover_image: /uploads/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg
 description: The magic of paint brush and a a little coffee
 ---
 
@@ -14,7 +14,7 @@ description: The magic of paint brush and a a little coffee
 
 They never said winning was easy. Some people can’t handle success, I can. The key is to drink coconut, fresh coconut, trust me. Give thanks to the most high. Surround yourself with angels. They don’t want us to win. Give thanks to the most high. Give thanks to the most high. Fan luv. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. We don’t see them, we will never see them. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel.
 
-![an image](./images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg)
+![an image](/uploads/images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg)
 
 ## This is a heading
 
