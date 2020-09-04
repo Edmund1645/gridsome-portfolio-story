@@ -15,7 +15,7 @@
     "netlify-cms": "^2.10.2"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.0"
   }
 }
